@@ -6,14 +6,15 @@
     <title>Projeto GitHub - Perfis dos Alunos</title>
     <style>
         body {
+            font-family: Arial, Impact, Haettenschweiler, 'Arial Narrow Bold';
             font-family: Arial, sans-serif;
             background-color: #f4f4f9;
             margin: 0;
             padding: 0;
         }
         header {
-            background-color: #2330a5;
-            color: white;
+            background-color: #4CAF50;
+            color: #ffffff;
             padding: 15px;
             text-align: center;
         }
@@ -22,12 +23,12 @@
             text-align: center;
         }
         .perfil-container {
-            display: flex   ;
+            display: flex;
             flex-wrap: wrap;
             justify-content: center;
         }
         .perfil {
-            background: white;
+            background-color: #ffffff;
             padding: 15px;
             margin: 10px;
             border-radius: 8px;
@@ -36,19 +37,32 @@
             width: 250px;
         }
         .foto {
-            width: 200px;
-            height: 250px;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
             object-fit: cover;
             margin-bottom: 10px;
         }
-       
+        .btn {
+            background-color: #4CAF50;
+            color: #ffffff;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            text-align: center;
+            display: inline-block;
+            margin-top: 10px;
+            border-radius: 5px;
+        }
+        .btn:hover {
+            background-color: #45a049;
+        }
         footer {
-            background-color: #333;
-            color: white;
+            background-color: #45a049;
+            color: #ffffff;
             text-align: center;
             padding: 10px;
             position: fixed;
-            bottom: 0;
             width: 100%;
         }
     </style>
@@ -62,7 +76,7 @@
 <main>
     <section>
         <h2>Sobre o Projeto</h2>
-        <p>Este projeto tem como objetivo entender o fluxo de trabalho do GitHub, incluindo a criação de branches, commits, Pull Requests e revisões de código.</p>
+        <p>Este projeto tem como objetivo entender o fluxo de trabalho do GitHub, incluindo a criação de ramificações, commits, Pull Requests e revisões de código.</p>
     </section>
 
     <section>
@@ -79,9 +93,12 @@
                 <p>Curso: Desenvolvimento de Sistemas</p>
                 <p><a href="[URL do GitHub]" target="_blank">https://github.com/PedroGabriel24/HandsON3</a></p>
             </div>
-        </div>
-        
-        <div class="perfil-container">
+          <div class="perfil">
+                <img class="foto" src="./Captura de tela 2024-10-04 173750.png" alt="Foto do Aluno">
+                <h3>Nome do Aluno</h3>
+                <p>Curso: [Nome do Curso]</p>
+                <p><a href="[URL do GitHub]" target="_blank">GitHub</a></p>
+           </div>
             <div class="perfil">
                 <img class="foto" src="felix.jpg" alt="Foto do Aluno">
                 <h3>Felpe Fernandes</h3>
@@ -90,15 +107,11 @@
             </div>
         </div>
 
-        <p>Cada aluno deve copiar e editar um bloco acima com suas informações.</p>
-        <img src="https://picsum.photos/id/237/200/300" alt="Cachorrinho">
-        <img src="https://picsum.photos/seed/picsum/200/300" alt="aleatorio">
-
-    </seção>
-        <button class="btn">Saiba mais sobre GitHub</button>
-
-        <p>Desenvolvido por Pedro Henrique Vicente Duarte</p>
     </section>
+
+    <button class="btn">Saiba mais sobre GitHub</button>
+    <img src="https://picsum.photos/id/237/200/300" alt="Cachorrinho">
+    <img src="https://picsum.photos/seed/picsum/200/300" alt="aleatorio">
 </main>
 
 <footer>
