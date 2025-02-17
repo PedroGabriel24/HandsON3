@@ -1,103 +1,102 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<cabeça>
+<header>
     <meta charset="UTF-8">
     <meta name="viewport" content="largura=largura-do-dispositivo, escala-inicial=1.0">
     <title>Projeto GitHub - Perfis dos Alunos</title>
-    <estilo>
-        corpo {
-            família de fontes: Arial, sem serifa;
-            cor de fundo: #f4f4f9;
-            margem: 0;
-            preenchimento: 0;
+    <style>
+        body {
+            font-family: Arial, Impact, Haettenschweiler, 'Arial Narrow Bold';
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
         }
-        cabeçalho {
-            cor de fundo: #4CAF50;
-            cor: branco;
-            preenchimento: 15px;
-            alinhamento de texto: centralizar;
+        header {
+            background-color: #4CAF50;
+            color: #ffffff;
+            padding: 15px;
+            text-align: center;
         }
-        principal {
-            preenchimento: 20px;
-            alinhamento de texto: centralizar;
+        main {
+            padding: 20px;
+            text-align: center;
         }
         .perfil-container {
-            exibição: flexível;
-            flex-wrap: envolver;
-            justificar-conteúdo: centro;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
         }
         .perfil {
-            fundo: branco;
-            preenchimento: 15px;
-            margem: 10px;
-            raio da borda: 8px;
-            caixa-sombra: 0px 0px 10px rgba(0, 0, 0, 0.1);
-            alinhamento de texto: centralizar;
-            largura: 250px;
+            background-color: #ffffff;
+            padding: 15px;
+            margin: 10px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 250px;
         }
         .foto {
-            largura: 100px;
-            altura: 100px;
-            raio da borda: 50%;
-            ajuste-objeto: capa;
-            margem inferior: 10px;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 10px;
         }
         .btn {
-            cor de fundo: #4CAF50;
-            cor: branco;
-            preenchimento: 10px 20px;
-            borda: nenhuma;
-            cursor: ponteiro;
-            alinhamento de texto: centralizar;
-            exibição: bloco embutido;
-            margem superior: 10px;
-            raio da borda: 5px;
+            background-color: #4CAF50;
+            color: #ffffff;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            text-align: center;
+            display: inline-block;
+            margin-top: 10px;
+            border-radius: 5px;
         }
-        .btn:passe o mouse {
-            cor de fundo: #45a049;
+        .btn:hover {
+            background-color: #45a049;
         }
-        rodapé {
-            cor de fundo: #333;
-            cor: branco;
-            alinhamento de texto: centralizar;
-            preenchimento: 10px;
-            posição: fixa;
-            fundo: 0;
-            largura: 100%;
+        footer {
+            background-color: #45a049;
+            color: #ffffff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
         }
-    </estilo>
-</cabeçalho>
-<corpo>
+    </style>
+</header>
+<body>
 
-<cabeçalho>
+<header>
     <h1>Bem-vindo ao Projeto de Pull Request e Code Review</h1>
-</cabeçalho>
+</header>
 
-<principal>
-    <seção>
+<main>
+    <section>
         <h2>Sobre o Projeto</h2>
         <p>Este projeto tem como objetivo entender o fluxo de trabalho do GitHub, incluindo a criação de ramificações, commits, Pull Requests e revisões de código.</p>
-    </seção>
+    </section>
 
-    <seção>
+    <section>
         <h2>Perfis dos Alunos</h2>
         <div class="perfil-container">
             <div class="perfil">
-                <img class="foto" src="[URL da foto do aluno]" alt="Foto do Aluno">
+                <img class="foto" src="./Captura de tela 2024-10-04 173750.png" alt="Foto do Aluno">
                 <h3>Nome do Aluno</h3>
                 <p>Curso: [Nome do Curso]</p>
                 <p><a href="[URL do GitHub]" target="_blank">GitHub</a></p>
             </div>
         </div>
         <p>Cada aluno deve copiar e editar um bloco acima com suas informações.</p>
-    </seção>
+    </section>
 
     <button class="btn">Saiba mais sobre GitHub</button>
-</principal>
+</main>
 
-<rodapé>
+<footer>
     <p>© 2025 Projeto GitHub PR - Todos os direitos reservados.</p>
-</rodapé>
+</footer>
 
-</corpo>
+</body>
 </html>
